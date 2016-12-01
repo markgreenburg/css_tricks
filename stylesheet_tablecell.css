@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.cf:before, .cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.menu {
+    width: 100%;
+    display: table;
+    /*padding: 1rem;*/
+    background-color: #222222;
+}
+
+.logo {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 1px;
+    background-color: blue;
+}
+
+.pad {
+    display: table-cell;
+    width: auto;
+    background-color: yellow;
+}
+
+.right {
+    display: table-cell;
+    vertical-align: middle;
+    width: 1px;
+    white-space: nowrap;
+    height: 100%;
+    background-color: blue;
+    padding: 0;
+    list-style-type: none;
+}
+
+.right li {
+    display: inline-block;
+    /*padding: 1rem;*/
+    background-color: gray;
+    height: 100%;
+    text-align: center;
+}
+
+
+
+/*Some reuseable classes for vertically aligning and floating header elements*/
+
+
+/*Define header elements and help them align vertically*/
+
+/*#header {
+    background-color: #222222;
+    border: 1px solid black;
+    width: 100%;
+    height: 80px;
+    position: relative;
+    top: 0;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+#header-logo-cell {
+    height: 80px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#header-nav-cell {
+    height: 80px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#header-nav-cell ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#header-nav-cell ul li {
+    display: inline-block;
+    text-align: center;
+}
+
+#header-nav-cell ul li a {
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    color: white;
+    padding: 32px 2em 32px 2em;
+    margin-left: -.2em;
+    margin-right: -.2em;
+    margin-top: -.3em;
+}
+
+#header-nav-cell ul li a:hover {
+    background: linear-gradient(-45deg, darkgray 2%, #222222 30%);
+}
+
+#header-nav-cell ul a img {
+    position: absolute;
+    top: 20px;
+    right: 13px;
+}
+
+#header-nav-cell ul li a #nav-img {
+    padding: 0px;
+}
+
+#header-nav-cell input {
+    border-radius: 10px;
+    border: 1px solid gray;
+    height: 25px;
+    margin: 0 5px 0 5px;
+}*/
+
+/*For smaller screen sizes, we need to center the logo and bring other nav elements centered under it.*/
+@media (max-width: 1310px) {
+
+}
