@@ -1,68 +1,69 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
-.cf:before, .cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+.cf::before,
+.cf::after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
 }
 
-.cf:after {
-    clear: both;
+.cf::after {
+  clear: both;
 }
 
 .menu {
-    width: 100%;
-    display: table;
-    /*padding: 1rem;*/
-    background-color: #222222;
+  width: 100%;
+  display: table;
+
+  /* padding: 1rem; */
+
+  background-color: #222;
 }
 
 .logo {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    width: 1px;
-    background-color: blue;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 1px;
+  background-color: blue;
 }
 
 .pad {
-    display: table-cell;
-    width: auto;
-    background-color: yellow;
+  display: table-cell;
+  width: auto;
+  background-color: yellow;
 }
 
 .right {
-    display: table-cell;
-    vertical-align: middle;
-    width: 1px;
-    white-space: nowrap;
-    height: 100%;
-    background-color: blue;
-    padding: 0;
-    list-style-type: none;
+  display: table-cell;
+  vertical-align: middle;
+  width: 1px;
+  white-space: nowrap;
+  height: 100%;
+  background-color: blue;
+  padding: 0;
+  list-style-type: none;
 }
 
 .right li {
-    display: inline-block;
-    /*padding: 1rem;*/
-    background-color: gray;
-    height: 100%;
-    text-align: center;
+  display: inline-block;
+
+  /* padding: 1rem; */
+  background-color: gray;
+  height: 100%;
+  text-align: center;
 }
 
+/* Some reuseable classes for vertically aligning and floating header elements */
 
+/* Define header elements and help them align vertically */
 
-/*Some reuseable classes for vertically aligning and floating header elements*/
-
-
-/*Define header elements and help them align vertically*/
-
-/*#header {
+/* #header {
     background-color: #222222;
     border: 1px solid black;
     width: 100%;
@@ -131,9 +132,8 @@ body {
     border: 1px solid gray;
     height: 25px;
     margin: 0 5px 0 5px;
-}*/
+} */
 
-/*For smaller screen sizes, we need to center the logo and bring other nav elements centered under it.*/
-@media (max-width: 1310px) {
-
-}
+/* For smaller screen sizes, we need to center the logo and bring other nav elements centered under it.
+@media (max-width: 1310px) {}
+*/
